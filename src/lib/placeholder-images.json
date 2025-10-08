@@ -7,6 +7,12 @@
       "imageHint": "plumbing pipes"
     },
     {
+      "id": "hero-split",
+      "description": "T.H. Plumbing and Heating truck and equipment.",
+      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/sitepic.png",
+      "imageHint": "company truck"
+    },
+    {
       "id": "feature-reliable",
       "description": "A plumber working carefully.",
       "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r2.jpg",
