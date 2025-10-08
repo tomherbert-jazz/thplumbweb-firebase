@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'tomwebapp22.azurewebsites.net',
+        hostname: 'th-plumbing.com',
         port: '',
         pathname: '/**',
       },

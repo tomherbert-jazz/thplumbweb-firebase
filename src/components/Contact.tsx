@@ -75,9 +75,9 @@ export default function Contact() {
                 <Phone className="h-6 w-6 text-primary" />
                 <span className="font-medium group-hover:underline">(774) 345-0358</span>
               </a>
-              <a href="mailto:THplumbingllc@gmail.com" className="flex items-center gap-4 group">
+              <a href="mailto:tomherbertjazz@gmail.com" className="flex items-center gap-4 group">
                 <Mail className="h-6 w-6 text-primary" />
-                <span className="font-medium group-hover:underline">THplumbingllc@gmail.com</span>
+                <span className="font-medium group-hover:underline">tomherbertjazz@gmail.com</span>
               </a>
               <div className="flex items-center gap-4">
                 <MapPin className="h-6 w-6 text-primary" />

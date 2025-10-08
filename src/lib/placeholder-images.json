@@ -3,37 +3,37 @@
     {
       "id": "hero-background",
       "description": "A background image showing modern plumbing pipes.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/plumber.jpg",
+      "imageUrl": "https://th-plumbing.com/Pictures/plumber.jpg",
       "imageHint": "plumbing pipes"
     },
     {
       "id": "hero-split",
       "description": "T.H. Plumbing and Heating truck and equipment.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/sitepic.png",
+      "imageUrl": "https://th-plumbing.com/Pictures/sitepic.png",
       "imageHint": "company truck"
     },
     {
       "id": "feature-reliable",
       "description": "A plumber working carefully.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r2.jpg",
+      "imageUrl": "https://th-plumbing.com/Pictures/r2.jpg",
       "imageHint": "plumber working"
     },
     {
       "id": "feature-options",
       "description": "A variety of plumbing fixtures.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r.jpg",
+      "imageUrl": "https://th-plumbing.com/Pictures/r.jpg",
       "imageHint": "plumbing fixtures"
     },
     {
       "id": "feature-satisfaction",
       "description": "A happy customer shaking hands with a plumber.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r3.jpg",
+      "imageUrl": "https://th-plumbing.com/Pictures/r3.jpg",
       "imageHint": "happy customer"
     },
     {
       "id": "contact-map",
       "description": "A video for the contact section",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/pic3.mov",
+      "imageUrl": "https://th-plumbing.com/Pictures/pic3.mov",
       "imageHint": "plumbing video"
     }
   ]
