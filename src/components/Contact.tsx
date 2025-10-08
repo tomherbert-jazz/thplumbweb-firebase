@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-import { useFormState, useFormStatus } from "react-dom";
+import { useEffect, useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import { handleContactForm } from "@/app/actions";
 import type { ContactFormState } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
@@ -39,7 +39,7 @@ function SubmitButton() {
 }
 
 export default function Contact() {
-  const [state, formAction] = useFormState(handleContactForm, initialState);
+  const [state, formAction] = useActionState(handleContactForm, initialState);
   const { toast } = useToast();
   const mapImage = PlaceHolderImages.find((img) => img.id === "contact-map");
 
