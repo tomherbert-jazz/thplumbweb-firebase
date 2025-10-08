@@ -27,8 +27,8 @@
     {
       "id": "feature-satisfaction",
       "description": "A happy customer shaking hands with a plumber.",
-      "imageUrl": "https://picsum.photos/seed/satisfaction/600/400",
-      "imageHint": "happy customer"
+      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r3.jpg",
+      "imageHint": "plumber smiling"
     },
     {
       "id": "contact-map",
