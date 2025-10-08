@@ -10,7 +10,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Mail, MapPin, Phone, Loader } from "lucide-react";
 import Link from "next/link";
@@ -41,7 +40,7 @@ function SubmitButton() {
 export default function Contact() {
   const [state, formAction] = useActionState(handleContactForm, initialState);
   const { toast } = useToast();
-  const mapImage = PlaceHolderImages.find((img) => img.id === "contact-map");
+  const contactMedia = PlaceHolderImages.find((img) => img.id === "contact-map");
 
   useEffect(() => {
     if (state.status === "success") {
@@ -86,16 +85,20 @@ export default function Contact() {
               </div>
             </div>
             <Separator />
-            {mapImage && (
+            {contactMedia && (
               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src={mapImage.imageUrl}
-                  alt={mapImage.description}
-                  width={600}
-                  height={400}
+                <video
+                  src={contactMedia.imageUrl}
+                  width="600"
+                  height="400"
                   className="w-full object-cover aspect-video"
-                  data-ai-hint={mapImage.imageHint}
-                />
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             )}
           </div>

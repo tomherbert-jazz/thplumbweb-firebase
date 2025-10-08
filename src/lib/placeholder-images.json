@@ -26,9 +26,9 @@
     },
     {
       "id": "contact-map",
-      "description": "A map showing the service area around Princeton, MA.",
-      "imageUrl": "https://picsum.photos/seed/map1/600/400",
-      "imageHint": "map massachusetts"
+      "description": "A video for the contact section",
+      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/pic3.mov",
+      "imageHint": "plumbing video"
     }
   ]
 }
