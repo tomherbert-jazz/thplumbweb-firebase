@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "A background image showing modern plumbing pipes.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r.jpg",
+      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/plumber.jpg",
       "imageHint": "plumbing pipes"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": "feature-options",
       "description": "A variety of plumbing fixtures.",
-      "imageUrl": "https://picsum.photos/seed/plumb3/600/400",
+      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r.jpg",
       "imageHint": "plumbing fixtures"
     },
     {
