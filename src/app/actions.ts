@@ -2,6 +2,7 @@
 'use server';
 
 import { z } from 'zod';
+import nodemailer from 'nodemailer';
 import { answerFAQ } from '@/ai/flows/faq-answer-tool';
 import type { FAQAnswerOutput } from '@/ai/flows/faq-answer-tool';
 
@@ -38,22 +39,47 @@ export async function handleContactForm(
       status: 'error',
     };
   }
-
+  
+  const { name, email, details } = validatedFields.data;
   const recipientEmail = 'tomherbertjazz@gmail.com';
-  // In a real application, you would use an email service (e.g., Nodemailer, SendGrid)
-  // to send the email. For now, we'll log the data to the console.
-  console.log('--- New Quote Request ---');
-  console.log(`Recipient: ${recipientEmail}`);
-  console.log('From:', validatedFields.data.name, `<${validatedFields.data.email}>`);
-  console.log('Details:', validatedFields.data.details);
-  console.log('-------------------------');
 
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.GMAIL_EMAIL,
+      pass: process.env.GMAIL_APP_PASSWORD,
+    },
+  });
 
-  return {
-    message: 'Thank you! Your quote request has been sent.',
-    status: 'success',
-    errors: null,
+  const mailOptions = {
+    from: `"${name}" <${process.env.GMAIL_EMAIL}>`,
+    to: recipientEmail,
+    replyTo: email,
+    subject: `New Quote Request from ${name}`,
+    html: `
+      <h2>New Quote Request</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Details:</strong></p>
+      <p>${details.replace(/\n/g, '<br>')}</p>
+    `,
   };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return {
+      message: 'Thank you! Your quote request has been sent.',
+      status: 'success',
+      errors: null,
+    };
+  } catch (error) {
+    console.error('Failed to send email:', error);
+    return {
+      message: 'Sorry, something went wrong and we couldn\'t send your message. Please try again later.',
+      status: 'error',
+      errors: null,
+    };
+  }
 }
 
 export async function getFaqAnswer(question: string): Promise<{ answer: FAQAnswerOutput | null; error: string | null }> {
