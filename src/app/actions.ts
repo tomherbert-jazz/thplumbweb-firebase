@@ -39,8 +39,15 @@ export async function handleContactForm(
     };
   }
 
-  // Here you would typically send an email
-  console.log('Contact Form Data:', validatedFields.data);
+  const recipientEmail = 'tomherbertjazz@gmail.com';
+  // In a real application, you would use an email service (e.g., Nodemailer, SendGrid)
+  // to send the email. For now, we'll log the data to the console.
+  console.log('--- New Quote Request ---');
+  console.log(`Recipient: ${recipientEmail}`);
+  console.log('From:', validatedFields.data.name, `<${validatedFields.data.email}>`);
+  console.log('Details:', validatedFields.data.details);
+  console.log('-------------------------');
+
 
   return {
     message: 'Thank you! Your quote request has been sent.',
