@@ -12,9 +12,14 @@ export default function Footer() {
               T.H. Plumbing & Heating LLC
             </span>
           </div>
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} T.H. Plumbing & Heating LLC. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-muted-foreground">
+             <p>
+              &copy; {new Date().getFullYear()} T.H. Plumbing & Heating LLC. All rights reserved.
+            </p>
+            <Link href="https://th-plumbing.azurewebsites.net/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-primary transition-colors">
+              Client Portal
+            </Link>
+          </div>
           <div className="flex items-center gap-4">
             <Link href="https://www.facebook.com/people/TH-Plumbing-and-Heating/100087281157354/" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
