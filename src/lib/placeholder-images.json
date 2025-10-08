@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A background image showing modern plumbing pipes.",
+      "imageUrl": "https://picsum.photos/seed/plumb1/1920/1080",
+      "imageHint": "plumbing pipes"
+    },
+    {
+      "id": "feature-reliable",
+      "description": "A plumber working carefully.",
+      "imageUrl": "https://picsum.photos/seed/plumb2/600/400",
+      "imageHint": "plumber working"
+    },
+    {
+      "id": "feature-options",
+      "description": "A variety of plumbing fixtures.",
+      "imageUrl": "https://picsum.photos/seed/plumb3/600/400",
+      "imageHint": "plumbing fixtures"
+    },
+    {
+      "id": "feature-satisfaction",
+      "description": "A happy customer shaking hands with a plumber.",
+      "imageUrl": "https://images.unsplash.com/photo-1545315003-c5ad6226c272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc1OTc2NDIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy customer"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the service area around Princeton, MA.",
+      "imageUrl": "https://picsum.photos/seed/map1/600/400",
+      "imageHint": "map massachusetts"
+    }
+  ]
 }
