@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'tomwebapp22.azurewebsites.net',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
