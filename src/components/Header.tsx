@@ -63,7 +63,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden items-center gap-4 md:flex">
-           <Link href="https://th-plumbing.com/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
+           <Link href="https://th-plumbing.azurewebsites.net/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
               Client Portal
             </Link>
           <a href="tel:774-345-0358" className="text-sm font-medium">
@@ -97,7 +97,7 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                 <Link href="https://th-plumbing.com/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">
+                 <Link href="https://th-plumbing.azurewebsites.net/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-lg font-medium">
                     Client Portal
                  </Link>
                 <Button asChild className="mt-4" size="lg">
