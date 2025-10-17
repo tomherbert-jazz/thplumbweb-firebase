@@ -50,7 +50,7 @@ export default function Testimonials() {
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2">
+              <CarouselItem key={index} className="md:basis-1/3">
                 <div className="p-1">
                   <Card className="h-full shadow-md">
                     <CardContent className="flex h-full flex-col justify-between p-6">

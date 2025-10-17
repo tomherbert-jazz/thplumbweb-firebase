@@ -29,7 +29,15 @@ const FAQAnswerOutputSchema = z.object({
 export type FAQAnswerOutput = z.infer<typeof FAQAnswerOutputSchema>;
 
 export async function answerFAQ(input: FAQAnswerInput): Promise<FAQAnswerOutput> {
-  return faqAnswerFlow(input);
+  try {
+    return await faqAnswerFlow(input);
+  } catch (error: any) {
+    console.error("Error in answerFAQ:", error);
+    return {
+      answer: "An error occurred while getting the answer. Please try again.",
+      contactFormRecommended: true,
+    };
+  }
 }
 
 const faqAnswerPrompt = ai.definePrompt({
@@ -55,7 +63,6 @@ const faqAnswerFlow = ai.defineFlow(
   async input => {
     const {output} = await faqAnswerPrompt({
       ...input,
-      contactFormRecommended: false, // Initialize as false, let the prompt decide.
     });
     return output!;
   }

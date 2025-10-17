@@ -3,38 +3,44 @@
     {
       "id": "hero-background",
       "description": "A background image showing modern plumbing pipes.",
-      "imageUrl": "https://picsum.photos/seed/bg/1200/800",
+      "imageUrl": "/images/sitepic.png",
       "imageHint": "plumbing pipes"
     },
     {
       "id": "hero-split",
       "description": "A plumber working on pipes under a sink.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/sitepic.png",
+      "imageUrl": "/images/sitepic.png",
       "imageHint": "plumber sink"
     },
     {
       "id": "feature-reliable",
       "description": "A plumber working carefully.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r2.jpg",
+      "imageUrl": "/images/r2.jpg",
       "imageHint": "plumber working"
     },
     {
       "id": "feature-options",
       "description": "A variety of plumbing fixtures.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r.jpg",
+      "imageUrl": "/images/r.jpg",
       "imageHint": "plumbing fixtures"
     },
     {
       "id": "feature-satisfaction",
       "description": "A happy customer shaking hands with a plumber.",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/r3.jpg",
+      "imageUrl": "/images/r3.jpg",
       "imageHint": "plumber smiling"
     },
     {
       "id": "contact-map",
       "description": "A video for the contact section",
-      "imageUrl": "https://tomwebapp22.azurewebsites.net/Pictures/pic3.mov",
+      "imageUrl": "/images/sitepic.png",
       "imageHint": "plumbing video"
+    },
+    {
+      "id": "hero-van",
+      "description": "A company van.",
+      "imageUrl": "/images/van.jpg",
+      "imageHint": "company van"
     }
   ]
 }

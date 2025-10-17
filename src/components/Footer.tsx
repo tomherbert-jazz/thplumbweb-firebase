@@ -17,8 +17,8 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} T.H. Plumbing & Heating LLC. All rights reserved.
             </p>
             <Link href="https://th-plumbing.azurewebsites.net/SaleInvoice/Create" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-primary transition-colors">
-              Client Portal
-            </Link>
+              IV
+          </Link>
           </div>
           <div className="flex items-center gap-4">
             <Link href="https://www.facebook.com/people/TH-Plumbing-and-Heating/100087281157354/" target="_blank" rel="noopener noreferrer">

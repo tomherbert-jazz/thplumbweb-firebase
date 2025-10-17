@@ -41,7 +41,7 @@ export async function handleContactForm(
   }
   
   const { name, email, details } = validatedFields.data;
-  const recipientEmail = 'tomherbertjazz@gmail.com';
+  const recipientEmail = 'tomherbertjazz@gmail.com,thplumbingllc@gmail.com';
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',

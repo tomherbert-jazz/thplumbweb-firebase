@@ -30,7 +30,11 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
-        {children}
+
+         {children}
+       
+     
+        
         <Toaster />
       </body>
     </html>
