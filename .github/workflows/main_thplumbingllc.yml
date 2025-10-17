@@ -33,7 +33,11 @@ jobs:
         with:
           name: node-app
           path: |
+<<<<<<< HEAD
             .next 
+=======
+            .next
+>>>>>>> ad42cb7f96c584776e64af4e044810fe3609a713
             public
             package*.json
             next.config.*
@@ -66,4 +70,5 @@ jobs:
           app-name: 'THPlumbingLLC'
           slot-name: 'Production'
           package: .
+
           
