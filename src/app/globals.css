@@ -41,7 +41,7 @@
   
   @media (max-width: 768px) {
     .absolute.top-\[52px\].left-4.w-32.h-32 {
-      left: 1rem;
+      left: 2rem;
       width: 2rem;
       height: 3rem;
     }
