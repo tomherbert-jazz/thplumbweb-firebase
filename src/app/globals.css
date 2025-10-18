@@ -38,6 +38,14 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  
+  @media (max-width: 768px) {
+    .absolute.top-\[52px\].left-4.w-32.h-32 {
+      left: 1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
   .dark {
     --background: 211 31% 12%;
     --foreground: 0 0% 95%;
