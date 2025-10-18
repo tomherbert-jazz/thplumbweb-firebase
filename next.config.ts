@@ -1,7 +1,6 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export', // ← CHANGE THIS from 'standalone' to 'export'
   trailingSlash: true,
   images: {
     unoptimized: true, // Required for static export
